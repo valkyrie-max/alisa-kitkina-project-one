@@ -33,7 +33,7 @@ button {
 
 .wrapper {
     max-width: 1280px;
-    width: 85%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -46,7 +46,7 @@ header h1 {
 }
 
 h2 {
-    font-size: 4.3rem;
+    font-size: 4rem;
     font-weight: 600;
     text-transform: uppercase;
     margin: 0;
@@ -54,7 +54,7 @@ h2 {
 }
 
 h3 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 600;
     text-transform: uppercase;
     margin: 0;
@@ -62,7 +62,7 @@ h3 {
 }
 
 p {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     line-height: 25px;
     margin: 0;
     padding: 0
@@ -311,10 +311,11 @@ h1 span {
 .first-regular-article-text {
     float: left;
     width: 45%;
-    margin: 20px 0;
+    padding: 30px 0 0 0;
 }
 
 .first-regular-article-text h2 {
+    width: 70%;
     padding: 10px 0 0 0;
 }
 
@@ -352,11 +353,11 @@ h1 span {
 .second-regular-article-text {
     float: right;
     width: 45%;
-    margin: 20px 0;
+    padding: 30px 0 0 0;
 }
 
 .second-regular-article-text h2 {
-    padding: 20px 0 0 0;
+    padding: 10px 0 0 0;
 }
 
 .second-regular-article-text p {
@@ -369,5 +370,26 @@ h1 span {
 
 /* features styling */  
 .features {
+    background: url('assets/one-magazine-footer.jpg') no-repeat;
+    background-size: cover;
+
+    padding: 100px 0;
     clear: both;
+}
+
+.features ul {
+    text-align: center;
+}
+
+.features li {
+    float: left;
+    width: calc(100%/3);
+}
+
+.features a {
+    color: #FCFCFC;
+}
+
+.features i {
+    font-size: 6rem;
 }
