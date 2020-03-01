@@ -9,6 +9,9 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
 /* global styling */
+/* * {
+    border: 1px solid rebeccapurple;
+} */
 
 html {
     font-size: 62.5%;
@@ -33,20 +36,20 @@ button {
 
 .wrapper {
     max-width: 1280px;
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
 }
 
 /* general styling */
 
 header h1 {
-    font-size: 15rem;
+    font-size: 12rem;
     margin: 0;
     font-weight: 500;
 }
 
 h2 {
-    font-size: 4rem;
+    font-size: 3.7rem;
     font-weight: 600;
     text-transform: uppercase;
     margin: 0;
@@ -54,7 +57,7 @@ h2 {
 }
 
 h3 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 600;
     text-transform: uppercase;
     margin: 0;
@@ -175,7 +178,7 @@ header h1 {
     line-height: 90%;
 
     /* marg/pad styling */
-    padding-top: 15%;
+    padding-top: 20rem;
 
     /* other styles */
     clear: both;
@@ -220,9 +223,10 @@ h1 span {
 }
 
 /* MAIN styling */
+
 /* fashion-gallery styling */
 .fashion-gallery {
-    margin: 80px 0;
+    margin: 60px 0;
 }
 
 .fashion-gallery h2 {
@@ -230,7 +234,7 @@ h1 span {
     text-align: center;
 
     /* marg/pad styling */
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 
 .fashion-gallery ul {
@@ -263,7 +267,7 @@ h1 span {
 
 /* article-highlights styling */
 .article-highlights {
-    padding: 40px 0 80px 0;
+    padding: 30px 0 80px 0;
 }
 
 .article-highlights-img {
@@ -308,10 +312,11 @@ h1 span {
 }
 
 /* first-regular-article styling */
+
 .first-regular-article-text {
     float: left;
     width: 45%;
-    padding: 30px 0 0 0;
+    padding: 40px 0 0 0;
 }
 
 .first-regular-article-text h2 {
@@ -339,21 +344,10 @@ h1 span {
 }
 
 /* second-regular-article styling */ 
-.second-regular-article-img {
-    width: 50%;
-    height: 100%;
-    float: left;
-}
-
-.second-regular-article-img img {
-    width: 100%;
-    display: block;
-}
-
 .second-regular-article-text {
     float: right;
     width: 45%;
-    padding: 30px 0 0 0;
+    padding: 40px 0 0 0;
 }
 
 .second-regular-article-text h2 {
@@ -368,28 +362,139 @@ h1 span {
     margin-top: 20px;
 }
 
+.second-regular-article-img {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.second-regular-article-img img {
+    width: 100%;
+    display: block;
+}
+
+
+
 /* features styling */  
 .features {
+    /* background styling */
     background: url('assets/one-magazine-footer.jpg') no-repeat;
     background-size: cover;
 
-    padding: 100px 0;
-    clear: both;
+    /* marg/pad styling */
+    padding: 70px 0;
+
 }
 
-.features ul {
+.features ul li {
+    /* layout stlying */
+    float: left;
+
+    /* size styling */
+    width: calc(100%/3 - 200px/3);
+
+    /* marg/pad styling */
+    margin-right: 100px;
+
+    /* text styling */
     text-align: center;
 }
 
-.features li {
-    float: left;
-    width: calc(100%/3);
+.features li:nth-child(3) {
+    margin-right: 0;
 }
 
 .features a {
+    display: inline-block;
     color: #FCFCFC;
+    line-height: 3.5rem;
 }
 
 .features i {
     font-size: 6rem;
+}
+
+/* FOOTER STYLING */
+footer {
+    background-color: #E3E3E3;
+    padding-top: 80px;
+}
+
+/* email-form styling */
+
+.email-form {
+    width: 50%;
+    float: left;
+    line-height: 4rem;
+    margin: 0px 50px 80px 0;
+}
+
+.email-form-input {
+    padding: 15px 0;
+}
+
+input[type="email"] {
+    float: left;
+    border: none;
+    padding: 10px;
+    width: 70%;
+}
+
+input::placeholder {
+    font-size: 1.5rem;
+}
+
+input[type="submit"]{
+    font-family: 'Cormorant Garamond', 'Times New Roman', 'Times', serif;
+    text-transform: uppercase;
+    padding: 10px 25px;
+    color: #FCFCFC;
+    background: #000;
+    border: none;
+    float: left;
+}
+
+/* contact-address styling */
+.contact-address {
+    float: left;
+    margin: 0 50px 80px 0;
+}
+
+.contact-address h3 {
+    line-height: 4rem;
+    padding-bottom: 10px;
+}
+
+.contact-address p,
+.contact-address address {
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+}
+
+.contact-address address {
+    font-style: normal;
+}
+
+/* footer-nav styling */ 
+.footer-nav {
+    margin-bottom: 80px;
+    float: right;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.footer-nav li {
+    padding-bottom: 10px;
+}
+
+.footer-nav a {
+    color: #000;
+}
+
+/* copyright styling */ 
+.copyright {
+    clear: both;
+    background: #ACACAC;
+    text-align: center;
+    padding: 10px;
 }
